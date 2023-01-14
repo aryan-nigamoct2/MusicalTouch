@@ -1,1 +1,60 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="This is a music player named MusicalTouch. In this you can play some musics of your choice"> <title>MusicalTouch - Have a music on the go</title> <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="css/responsive.css"> <link rel="stylesheet" href="fonts/Quicksand.css"> <link rel="stylesheet" href="fonts/Varela.css"> <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png"> <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png"> <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png"> <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png"> <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png"> <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png"> <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png"> <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png"> <link rel="manifest" href="/favicons/manifest.json"> <meta name="msapplication-TileColor" content="#ffffff"> <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png"> <meta name="theme-color" content="#ffffff"></head><body> <div class="container"> <div class="music"> <h1 class="music-li-head">Your Music List</h1> <ul class="music-list"> <li class="music-li" id="music1">Attack on Titan Season 4 Opening - My War</li><br> <li class="music-li" id="music2">Attack on Titan Opening - Guren no Yumiya</li><br> <li class="music-li" id="music3">Attack on Titan Season 2 Opening - Shinzou Sasageyo</li><br> <li class="music-li" id="music4">Channa Mereya - Ae Dil hai Mushkil</li><br> <li class="music-li" id="music5">Raat Bhar - Heropanti</li><br> <li class="music-li" id="music6">Love you Zindagi Theme Song</li><br> <li class="music-li" id="music7">Ek Dil Ek Jaan - Padmavat</li><br> <li class="music-li" id="music8">Teri Mitti - Kesari</li><br> </ul> </div> </div> <div class="bottom"> <div class="progress-bar"> <input type="range" name="range" id="progressBar" min="0" max="100" value="0"> </div> <div class="buttons"> <img id="previous-btn" class="icons" src="icons/backward-step-solid.svg" alt="Previous icon"> <img id="play-btn" class="icons" src="icons/circle-play-solid.svg" alt="Play and Pause icon"> <img id="next-btn" class="icons" src="icons/forward-step-solid.svg" alt="Forward icon"> </div> </div></body><script src="js/main.js"></script></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is a music player named MusicalTouch. In this you can play some musics of your choice">
+    <title>MusicalTouch - Have a music on the go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="fonts/Quicksand.css">
+    <link rel="stylesheet" href="fonts/Varela.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="container">
+        <div class="music">
+            <h1 class="music-li-head">Your Music List</h1>
+            <ul class="music-list">
+                <li class="music-li" id="music1">Attack on Titan Season 4 Opening - My War</li><br>
+                <li class="music-li" id="music2">Attack on Titan Opening - Guren no Yumiya</li><br>
+                <li class="music-li" id="music3">Attack on Titan Season 2 Opening - Shinzou Sasageyo</li><br>
+                <li class="music-li" id="music4">Channa Mereya - Ae Dil hai Mushkil</li><br>
+                <li class="music-li" id="music5">Raat Bhar - Heropanti</li><br>
+                <li class="music-li" id="music6">Love you Zindagi Theme Song</li><br>
+                <li class="music-li" id="music7">Ek Dil Ek Jaan - Padmavat</li><br>
+                <li class="music-li" id="music8">Teri Mitti - Kesari</li><br>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="progress-bar"> <input type="range" name="range" id="progressBar" min="0" max="100" value="0"> </div>
+        <div class="buttons"> <img id="previous-btn" class="icons" src="icons/backward-step-solid.svg"
+                alt="Previous icon"> <img id="play-btn" class="icons" src="icons/circle-play-solid.svg"
+                alt="Play and Pause icon"> <img id="next-btn" class="icons" src="icons/forward-step-solid.svg"
+                alt="Forward icon"> </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
